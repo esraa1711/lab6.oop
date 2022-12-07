@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+
+<script>
+//     function Box(_width,_height,_arr)
+// {
+//   this.width=_width;
+//   this.height=_height;
+//   this.arr=_arr;
+// }
+
+// function Book(_id,_name,_writer,_num)
+// {
+
+// this.id=_id;
+// this.name=_name;
+// this.writer=_writer;
+// this.num=_num;
+
+// }
+// Box.prototype.sum= function(){
+// var sum=0;
+//     for(var i=0;i<this.arr.length;i++)
+//     {
+//       sum+=this.arr[i].num   
+//         }
+//         return sum;
+
+
+//     }
+  
+
+// var B1=new Book(1,"C++","john",300);
+// var B2=new Book(2,"JS","smith",500);
+// var B3=new Book(3,"JS","smith",500);
+// var B4=new Book(4,"JS","smith",500);
+
+// var Box1=new Box(10,20,[B1,B2,B3,B4]);
+// console.log(Box1.sum());
+// Box.prototype.calc=function(){
+//      return this.width*this.height
+//     }
+
+//     console.log(Box1.calc());
+
+/////////////////////////////////////////////////////////////////////
+
+
+
+function print3Dpoint(x=0,y=0,z=0)
+{
+  this.x=x;
+  this.y=y;
+  this.z=z;
+
+}
+ print3Dpoint.prototype.display=function(){
+console.log(this.x,this.y,this.z)
+
+ }
+var one=new print3Dpoint(5,6,2);
+var two=new print3Dpoint(3,4,1);
+console.log(`this=${(one.x-two.x)+(one.y+two.y)*(one.z+two.z)}`)
+
+ ///////////////////////////////////////////////////////////////////////
+
+// function Course(_name,_grade){
+//   this.name=_name;
+//   this.grade=_grade;
+// }
+
+
+
+// function student(_name,_course){
+//   this.name=_name;
+//   this.course=_course;
+// }
+
+
+
+// student.prototype.sum= function(){
+// var sum=0;
+//     for(var i=0;i<this.course.length;i++)
+//     {
+//       sum+=this.course[i].grade   
+//         }
+//         return sum;
+
+//     }
+// var c1=new Course("c",30);
+// var c2=new Course("JS",50);
+// var c3=new Course("c+",10);
+
+
+// var student1=new student("Ali",[c1,c2]);
+// var student2=new student("Ahmed",[c3,c2,c1]);
+
+
+// console.log(student2.sum());
+// console.log(student1.sum());
+
+
+</script>
+</html>
